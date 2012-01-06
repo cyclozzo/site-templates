@@ -30,9 +30,9 @@ System Cloud's main functionality is to deploy Application Clouds, which involve
 ## System Requirement
 
 * Two machines for Master with fail-over and Console.
-* At least five machines for a distributed database and file system with high-availability and fail-over.
+* At least five machines for our distributed database and file system with high-availability and fail-over.
 
-*Though Cyclozzo could be run in just two machine cluster. We recommend the specs mentioned above.*
+*Although Cyclozzo could be configured to run in just two machine cluster, We recommend the specs mentioned above.*
 
 Machine Configuration goes here...
 
@@ -53,7 +53,7 @@ Manages application instances and reports stats to System cloud.
 * At least five machines for a distributed database and file system with high-availability and fail-over.
 * Additional machines will host applications and take part in data replication.
 
-[FILL UP MACHINE CONFIG HERE]
+Machine configuration goes here...
 
 ![Cyclozzo Architecture](/images/setup.png)
 
@@ -61,13 +61,17 @@ Manages application instances and reports stats to System cloud.
 
 ## About Cyclozzo OSE
 
-Introduction goes here....
+Cyclozzo's Opensource Edition allows you to run Google App Engine compatible applications in a distributed environment. It lacks the features of the proprietary version such as automatic scaling, metrics collection, management UI etc. Using Cyclozzo OSE, you will be able to create a cluster where you can host your applications.
+
+## Getting sources
+
+    git clone git@github.com:cyclozzo/cyclozzo.git
 
 ## Building Cyclozzo
 
 Cyclozzo's build system can build `deb` packages from the sources. Once you have all the dependencies ready in the `deps` directory, do 
 
-    cd buildbot
+    cd cyclozzo/buildbot
     make all
 
 and publish the debian repository,
@@ -107,6 +111,8 @@ to exchange the SSH keys generated during installation to all the slave nodes.
 Now, its time to configure/format the cluster
 
     cyclozzo --configure --format all
+
+This command synchronizes the configuration across all the nodes cleans Hadoop Filesystem and Hypertable databases.
 
 ## Starting Cyclozzo cluster
 
