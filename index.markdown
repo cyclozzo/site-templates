@@ -63,6 +63,81 @@ Machine configuration goes here...
 
 Cyclozzo's Opensource Edition allows you to run Google App Engine compatible applications in a distributed environment. It lacks the features of the proprietary version such as automatic scaling, load balancing, metrics collection, management UI etc. Using Cyclozzo OSE, you will be able to create a cluster where you can host your applications. Cyclozzo's opensource version only provides the yellow colored layer in the Application Cloud diagram. 
 
+## Comparison
+
+<table>
+    <tr>
+        <td></td>
+        <td>Cyclozzo OSE</td>
+        <td>Cyclozzo Plus</td>
+    </tr>
+    <tr>
+        <td>Cluster Management</td>
+        <td>&#10004;</td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>Sandboxed environment</td>
+        <td>&#10004;</td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>Hypertable driver</td>
+        <td>&#10004;</td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>HDFS for distributed storage</td>
+        <td>&#10004;</td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>SL support for application</td>
+        <td>&#10004;</td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>Application code caching</td>
+        <td>&#10004;</td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>CLI based instance launcher</td>
+        <td>&#10004;</td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>Google Python SDK compatibility (1.3.8)</td>
+        <td>&#10004;</td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>Google JAVA SDK compatibility (1.3.8)</td>
+        <td></td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>Web console for Cloud and application management</td>
+        <td></td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>Performance graphs, logs and reports</td>
+        <td></td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>Auto scalability</td>
+        <td></td>
+        <td>&#10004;</td>
+    </tr>
+    <tr>
+        <td>Application metrics</td>
+        <td></td>
+        <td>&#10004;</td>
+    </tr>
+</table>
+
 ## Getting sources
 
     git clone git@github.com:cyclozzo/cyclozzo.git
