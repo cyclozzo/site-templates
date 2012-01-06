@@ -22,10 +22,10 @@ System Cloud's main functionality is to deploy Application Clouds, which involve
 
 * Services
 
-    1. Cyclozzo Master is an interface which enables Application Clouds to communicate with System Cloud using RPC.
-    2. DHCP Service leases IP's to PXE booted machines based on user configuration.
-    3. Statistics Collector catalogs critical resource usage information from each Application servers.
-    4. Cyclozzo Console/UI – Cloud Administration Web front-end.
+    1. *Cyclozzo Master* is an interface which enables Application Clouds to communicate with System Cloud using RPC.
+    2. *DHCP Service* leases IP's to PXE booted machines based on user configuration.
+    3. *Statistics Collector* catalogs critical resource usage information from each Application servers.
+    4. *Cyclozzo Console/UI* – Cloud Administration Web front-end.
 
 ## System Requirement
 
@@ -44,8 +44,8 @@ Manages application instances and reports stats to System cloud.
 
 * Services
 
-    1. Manager scales applications based on load calculated from stats reported by Load Balancer. An Application cloud runs a single instance of Manager service with fail-over.
-    2. Satellite service runs all application servers. They start/stop instances as required by Manager service.
+    1. *Manager* scales applications based on load calculated from stats reported by Load Balancer. An Application cloud runs a single instance of Manager service with fail-over.
+    2. *Satellite* service runs all application servers. They start/stop instances as required by Manager service.
 
 ## System Requirement
 
@@ -61,7 +61,7 @@ Machine configuration goes here...
 
 ## About Cyclozzo OSE
 
-Cyclozzo's Opensource Edition allows you to run Google App Engine compatible applications in a distributed environment. It lacks the features of the proprietary version such as automatic scaling, metrics collection, management UI etc. Using Cyclozzo OSE, you will be able to create a cluster where you can host your applications.
+Cyclozzo's Opensource Edition allows you to run Google App Engine compatible applications in a distributed environment. It lacks the features of the proprietary version such as automatic scaling, load balancing, metrics collection, management UI etc. Using Cyclozzo OSE, you will be able to create a cluster where you can host your applications. Cyclozzo's opensource version only provides the yellow colored layer in the Application Cloud diagram. 
 
 ## Getting sources
 
@@ -83,7 +83,7 @@ Now you'll have an `apt` repository with all the packages and dependencies under
     ls ../repo
     i386    all     x86_64
 
-You have to add the `repo` directory to have FTP access so that `apt` can access the packages.
+You have to share the `repo` directory to have anonymous FTP/HTTP access so that `apt` can access the packages.
 
 ## Deploying Cyclozzo
 
